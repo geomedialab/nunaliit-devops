@@ -1,5 +1,4 @@
 #!/bin/bash
-
 if [ -d "./nunaliit_old" ]; then
         echo "Removing ./nunaliit_old"
         rm -rf nunaliit_old
