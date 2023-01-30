@@ -1,13 +1,13 @@
 #!/bin/bash
 
 if [ -d "./nunaliit_old" ]; then
-  echo "Removing ./nunaliit_old"
-  rm -rf nunaliit_old
+        echo "Removing ./nunaliit_old"
+        rm -rf nunaliit_old
 fi
 
 if [ -d "./nunaliit" ]; then
-  echo "Moving ./nunaliit to ./nunaliit_old"
-  mv nunaliit nunaliit_old
+        echo "Moving ./nunaliit to ./nunaliit_old"
+        mv nunaliit nunaliit_old
 fi
 
 git clone https://github.com/GCRC/nunaliit.git uncompiled_repo && \
@@ -20,5 +20,3 @@ cd .. && \
 tar xf *.tar.gz --transform 's!^[^/]\+\($\|/\)!nunaliit\1!' && \
 rm -f nunaliit_*.tar.gz && \
 rm -rf uncompiled_repo
-: <<'END'
-END
