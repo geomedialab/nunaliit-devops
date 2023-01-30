@@ -20,3 +20,4 @@ cd .. && \
 tar xf *.tar.gz --transform 's!^[^/]\+\($\|/\)!nunaliit\1!' && \
 rm -f nunaliit_*.tar.gz && \
 rm -rf uncompiled_repo
+:
